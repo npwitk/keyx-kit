@@ -1,0 +1,7 @@
+node_modules/
+dist/
+# Generated fixture decks (rebuild with scripts/); exported .keyx get committed once reviewed
+fixtures/out/
+# Private reference material (Apple guideline decks, event assets) — never commit
+reference/
+.DS_Store

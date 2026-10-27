@@ -1,0 +1,19 @@
+{
+  "name": "keyx-kit",
+  "version": "0.0.0",
+  "description": "Read, write and diff Keynote Interchange Format (.keyx) bundles without Keynote.",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "keyx": "src/cli.ts" },
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "keyx": "node --experimental-strip-types --no-warnings src/cli.ts",
+    "fixtures:transitions": "osascript -l JavaScript scripts/make-transition-fixtures.js fixtures/out/transitions"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
